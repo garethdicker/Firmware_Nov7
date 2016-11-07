@@ -13,7 +13,7 @@ then
 	param set RTL_RETURN_ALT 30.0
 	param set RTL_DESCEND_ALT 10.0
 	param set PWM_DISARMED 900
-	param set PWM_MIN 1075
+	param set PWM_MIN 1000
 	param set PWM_MAX 1950
 
 	param set RTL_LAND_DELAY 0
@@ -37,7 +37,7 @@ set PWM_AUX_MAX 2000
 # Transitional support: ensure suitable PWM min/max param values
 if param compare PWM_MIN 1000
 then
-	param set PWM_MIN 1075
+	param set PWM_MIN 1000
 fi
 if param compare PWM_MAX 2000
 then
